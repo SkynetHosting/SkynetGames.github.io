@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+  html .container, body .container {
+    width: 100%;
+    height: 100%; }
+
+/* MATERIAL DESIGN BLUE-GRAY*/
+/* MATERIAL DESIGN RED*/
+/* MATERIAL DESIGN LIME*/
+.container .wrapper .content {
+  -webkit-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
+ .container .wrapper .toptext {
+	position: absolute;
+	text-decoration: none;
+	font-size: 90px;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	top: 30%;
+	z-index: -5;
+}
+ .container .wrapper .midtext {
+	position: absolute;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	top: 90%;
+	width: 100%;
+}
+ .container .wrapper .bottomtext {
+	position: absolute;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	top: 95%;
+	width: 100%;
+}
+.bottomtext a {
+	text-decoration: none;
+}
+ /*
+.container .wrapper .footer {
+  -webkit-flex: 0 0 auto;
+  -moz-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin: 20px;
+  padding: 0;
+  text-decoration: none; }
+  .container .wrapper .footer .bitcoin {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 5px 10px;
+    background-color: #ECEFF1;
+    border: solid 3px;
+    border-radius: 10px;
+    border-color: #90A4AE; }
+    .container .wrapper .footer .bitcoin img {
+      -webkit-flex: 0 0 auto;
+      -moz-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: 40px;
+      height: 40px; }
+    .container .wrapper .footer .bitcoin span {
+      -webkit-flex: 1 0 auto;
+      -moz-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      font-size: 20px;
+      color: #263238;
+      padding-left: 10px;
+      font-family: "Raleway", sans-serif; }
+*/

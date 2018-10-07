@@ -1,0 +1,62 @@
+@import 'fonts';
+@import 'mixins';
+@import 'reset';
+@import 'material';
+@import 'colors';
+
+.container {
+    .wrapper {
+        .games-search input{
+            font-family: $font-stack-content;
+            font-size: 20px;
+
+            width: 500px;
+
+            @media screen and (max-width: 550px)
+            {
+                width: auto;
+            }
+
+            margin: 10px;
+            padding: 10px;
+
+            border: solid 3px;
+            border-radius: 10px;
+            @include material-border-color($color-main, 4);
+            @include material-background-color($color-main, 1);
+        }
+
+        .games-container {
+            @include display-flex-flow(row, wrap);
+
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+
+            height: 100%;
+            width: 100%;
+
+            .games-image {
+                @include flex(0, 1);
+
+                margin: 5px;
+
+                width: auto;
+                height: auto;
+
+                a img {
+                    @include material-border-color($color-main, 4);
+                    border-radius: 10px;
+                    border-width: medium;
+                    border-style: solid;
+                    -webkit-box-shadow: inset 3px 6px 15px -1px rgba(0,0,0,0.5);
+                    -moz-box-shadow: inset 3px 6px 15px -1px rgba(0,0,0,0.5);
+                    box-shadow: inset 3px 6px 15px -1px rgba(0,0,0,0.5);
+                    max-width: 100%;
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

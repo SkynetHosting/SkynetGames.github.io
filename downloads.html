@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="skynet">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Skynet</title>
+        <link rel="stylesheet" type="text/css" href="skynet-style/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="skynet-style/css/downloads.css" />
+    </head>
+    <body>
+        <div class="container">
+            <ul class="wrapper-nav">
+                <li class="nav-logo"><a href="index.html">Skynet</a></li>
+                <li class="nav-link active"><a href="downloads.html">Downloads</a></li>
+            </ul>
+            <div class="wrapper">
+                <div class="games-search">
+                    <input placeholder="Search Skynet..." type="text" id="searchbox"/>
+                </div>
+                <div class="games-container" ng-controller="GameController as gameController">
+                    <div id="game-{{game.name}}" class="games-image" title="{{game.altText}}" ng-repeat="game in gameController.games">
+        				<a href="{{game.bindingAddress}}" download="">
+        					<img class="game-image" src="{{game.imageAddress}}" alt="{{game.altText}}">
+        				</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<script src="skynet-style/js/_downloads/gamedata.js"></script>
+        <script src="skynet-style/js/depend/angular-1.6.6/angular.min.js"></script>
+        <script src="skynet-style/js/_downloads/ng.js"></script>
+        <script src="skynet-style/js/_downloads/main.js"></script>
+        <script src="skynet-style/js/depend/jquery-3.2.1/jquery-3.3.1.js"></script>
+    </body>
+</html>
+<!-- images are 460 x 215 -->
