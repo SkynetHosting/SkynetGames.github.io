@@ -47,29 +47,7 @@ html, body {
 	width: 100%;
 }
 
- .container .wrapper .payment-nav {
-	-webkit-flex: 0 0 auto;
-    -moz-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    display: flex;
-    -webkit-flex-flow: column wrap;
-    -moz-flex-flow: column wrap;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
-	margin-top: 25%;
-    width: 100%;
-    list-style: none; }
-	.container .payment-nav .pay-link, .container .payment-nav .pay-logo {
-	  text-align: center;
-      padding: 5px;
-      font-family: "Raleway", sans-serif;
-      font-size: 25px;
-      text-decoration: none; 
-	  link-style: none;}
-      .container .wrapper-nav .nav-link a, .container .wrapper-nav .nav-logo a {
-        color: #ECEFF1;
-        text-decoration: none; }
+ .container .wrapper .donations {
+	position: absolute;
+	top: 60%;
+}
