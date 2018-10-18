@@ -2,10 +2,9 @@
   <div id="app">
     <div class="header">
         <router-link to="/">Skynet</router-link>
-        <router-link to="/games">Games</router-link>
-        <router-link to="/movies">Movies</router-link>
-        <router-link to="/software">Software</router-link>
         <router-link to="donate">Donate</router-link>
+        <router-link to="/games">Games</router-link>
+        <router-link to="/software">Software</router-link>
     </div>
     <div class="content">
       <router-view/>

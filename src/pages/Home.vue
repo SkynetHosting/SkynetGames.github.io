@@ -4,11 +4,6 @@
         <span class="center">I hate all of you, so shut up and play my games.</span>
         <div class="spacer"></div>
         <span class="lower">These aren't actually my games, but oh well. 🎵 A pirate's life for me. 🎵</span>
-        <span class="lower">
-            For updates, check out our
-            <a href="https://www.github.com/skynetgames/skynetgames.github.io">GitHub</a>
-            or follow us on <a href="https://twitter.com/ReallySkynet">Twitter</a>.
-        </span>
     </div>
 </template>
 
