@@ -98,5 +98,63 @@ var GameData = [
 			"First-Person",
 			"Walking Simulator"
 		]
+	},
+	{
+		"alt": "Oxygen Not Included",
+		"date": "May 18, 2017",
+		"description": "Oxygen Not Included is a space-colony simulation game. Deep inside an alien space rock your industrious crew will need to master science, overcome strange new lifeforms, and harness incredible space tech to survive, and possibly, thrive.",
+		"dev": "Klei Entertainment",
+		"name": "457140",
+		"checksums": {
+			"CRC32": "EB6B50FF",
+			"CRC64": "9F6DBFE5FE3D2E62",
+			"SHA256": "4E345194B19DA080A97C9D322A4423253D53B295F8039660173AA28CC3D17C66",
+			"SHA1": "C740CE52B04F6CB5D7147ABA89152C0D252811AC",
+			"BLAKE2sp": "CCCEE6706261D850D35A089000F58E9034F598F52C2505DF3F43FDDCB4DF9AEB"
+		},
+		"tags": [
+			"Early Access",
+			"Base Building",
+			"Survival",
+			"Resource Management"
+		]
+	},
+	{
+		"alt": "Adventures On The Polluted Islands",
+		"date": "Feb 17, 2017",
+		"description": "Adventures On The Polluted Islands \u2013 adventure game with elements of sandbox. You will play a small crab, armed with a boomerang. Help the survivors and go in search of salvation. Tasks, secrets, boss fights, easter eggs and much more are waiting for you!",
+		"dev": "Uncle Frost Team",
+		"name": "496690",
+		"checksums": {
+			"CRC32": "3F639A78",
+			"CRC64": "3B259B42108013AE",
+			"SHA256": "848D3C8C0C3FD3216D4AAE577F99259F802EB02DE9D90562961ED4A9F441E72F",
+			"SHA1": "59E06FFC5C8A7EBE7CEF1E0B4FD872433C0F4DBB",
+			"BLAKE2sp": "B1716FB3F9D390644ED10504E44FAC2A0D40F4AB81D4ABA1877E6ED76A2EDC2D",
+		},
+		"tags": [
+			"Indie",
+			"Casual",
+			"Adventure"
+		]
+	},
+	{
+		"alt": "Citalis",
+		"date": "Nov 3, 2016",
+		"description": "Citalis is a fast paced city simulation game where you must carefully manage your city to avoid crime and disasters such as floods and droughts - all whilst making a profit!",
+		"dev": "Matt Hooper",
+		"name": "539440",
+		"checksums": {
+			"CRC32": "5DE6A0CC",
+			"CRC64": "7340457F774A514C",
+			"SHA256": "704BED93CBF7AFA7BD6A390DFC3DCA1160E96897D7609C8FBCBB245009BB641D",
+			"SHA1": "902685F52B152A7A48197404BBFBA8D4C79969EC",
+			"BLAKE2sp": "5F3CB1AEEDF06D6DF7248BDEC957ED2E1CC2216AD32ACCFEFC603C84D5F37F3F"
+		},
+		"tags": [
+			"Casual",
+			"Indie",
+			"Simulation"
+		]
 	}
 ]
