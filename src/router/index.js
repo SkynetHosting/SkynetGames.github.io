@@ -1,11 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/Home'
-import Games from '@/pages/Games'
-import Movies from '@/pages/Movies'
-import Software from '@/pages/Software'
 import Donate from '@/pages/Donate'
-import NotFound from '@/pages/NotFound'
+import Games from '@/pages/Games'
+import Software from '@/pages/Software'
+import NotFound from '@/pages/404'
 
 Vue.use(Router)
 
@@ -18,14 +17,14 @@ export default new Router({
       component: Home
     },
     {
+      path: '/donate',
+      name: 'Donate',
+      component: Donate
+    },
+    {
       path: '/games',
       name: 'Games',
       component: Games
-    },
-    {
-      path: '/movies',
-      name: 'Movies',
-      component: Movies
     },
     {
       path: '/software',
@@ -33,18 +32,13 @@ export default new Router({
       component: Software
     },
     {
-      path: '/donate',
-      name: 'Donate',
-      component: Donate
-    },
-    {
-      path: '/notFound',
-      name: 'NotFound',
+      path: '/404',
+      name: '404',
       component: NotFound
     },
     {
       path: '*',
-      redirect: '/notFound'
+      redirect: '/404'
     }
   ]
 })

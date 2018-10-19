@@ -13,9 +13,3 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
-
-function created() {
-	let ckeditor = document.createElement("script");    
-	ckeditor.setAttribute("src", "https://commerce.coinbase.com/v1/checkout.js?version=201807");
-	document.head.appendChild(ckeditor);
-}

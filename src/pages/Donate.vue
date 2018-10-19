@@ -1,52 +1,62 @@
 <template>
-    <div class="container">
-        <div class="spacer"></div>
-        <span class="center">The content here may be free, but the server time sure isn't!</span>
-        <span class="mid">So if you could spare a dollar (or ten), you could think about helping us stay afloat...</span>
-		<div class="spacer"></div>
-		<div>
-			<a href="https://commerce.coinbase.com/checkout/3e58a400-31e0-4fc9-b0fd-ef5e2bc5df33">
-				Pay with Crypto!
-			</a>
-		</div>
+    <div id="donate-outer">
+        <div class="container-inner">
+            <span class="big">The content here may be free, but the server time sure isn't!</span>
+            <span>So if you could spare a dollar (or ten), you could think about helping us stay afloat...</span>
+            <a href="https://commerce.coinbase.com/checkout/3e58a400-31e0-4fc9-b0fd-ef5e2bc5df33">Donate with Crypto</a>
+        </div>
     </div>
 </template>
 
 <style lang="scss">
-    @import "../assets/scss/variables";
+@import "../assets/scss/colors";
+@import "../assets/scss/fonts";
 
-    .container {
+#donate-outer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    .container-inner {
         display: flex;
         flex-flow: column nowrap;
+        flex: 0 0 auto;
         align-items: center;
-        text-align: center;
 
-        width: 100%;
-        height: 100%;
+        span, a {
+            margin: 10px;
 
-        .spacer {
-            flex: 0.33 1 auto;
+            font-family: $font-stack-main;
+            font-size: 20px;
+            text-align: center;
         }
-		
-		.center {
-			flex: 0 1 auto;
 
-			font-family: $font-stack-accent;
-			font-size: 50px;
-		}
+        .big {
+            font-size: 50px;
+        }
 
-		.mid {
-			flex: 0 1 auto;
-			
-			font-family: $font-stack-accent;
-			font-size: 30px;
-		}
+        a {
+            padding: 10px;
 
-		.payment {
-			flex: 1 1 auto;
-			
-			font-family: $font-stack-accent;
-			font-size: 30px;
-		}
+            background-color: white;
+            color: black;
+
+            border: 3px solid;
+            border-color: $color-primary-dark;
+            border-radius: 5px;
+
+            text-decoration: none;
+
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $color-primary-light;
+            }
+        }
     }
+}
 </style>
