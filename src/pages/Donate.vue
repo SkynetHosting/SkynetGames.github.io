@@ -42,11 +42,11 @@
         a {
             padding: 10px;
 
-            background-color: white;
+            background-color: $color-secondary-light;
             color: black;
 
             border: 3px solid;
-            border-color: $color-primary-dark;
+            border-color: $color-secondary;
             border-radius: 5px;
 
             text-decoration: none;
@@ -54,7 +54,7 @@
             transition: background-color 0.3s;
 
             &:hover {
-                background-color: $color-primary-light;
+                background-color: white;
             }
         }
     }

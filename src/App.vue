@@ -33,7 +33,7 @@ html body #app {
   display: flex;
   flex-flow: column nowrap;
 
-  background-color: white;
+  background-color: $color-primary-light;
 
   .header {
     display: flex;
@@ -57,7 +57,7 @@ html body #app {
       transition: color 0.3s;
 
       &:hover {
-        color: $color-primary-light;
+        color: $color-secondary-light;
       }
     }
 
