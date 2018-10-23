@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/Home'
 import Donate from '@/pages/Donate'
+import Downloads from '@/pages/Downloads'
 import Games from '@/pages/Games'
 import Software from '@/pages/Software'
 import NotFound from '@/pages/404'
@@ -20,6 +21,11 @@ export default new Router({
       path: '/donate',
       name: 'Donate',
       component: Donate
+    },
+    {
+      path: '/downloads',
+      name: 'Downloads',
+      component: Downloads
     },
     {
       path: '/games',
