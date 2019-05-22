@@ -1,0 +1,65 @@
+@import 'fonts';
+@import 'mixins';
+@import 'reset';
+@import 'material';
+@import 'colors';
+
+html {
+    @include material-background-color($color-main, 3);
+}
+
+.container {
+    @include display-flex-flow(column, nowrap);
+
+    .wrapper-nav {
+        @include flex(0);
+        @include display-flex-flow(row, wrap);
+
+        width: 100%;
+
+        @include material-background-color($color-main, 10);
+        border-bottom: solid 3px;
+        @include material-border-color($color-main, 7);
+
+        list-style: none;
+
+        .nav-link {
+            padding: 10px;
+
+            font-family: $font-stack-title;
+            font-size: 20px;
+            text-decoration: none;
+
+            a {
+                @include material-color($color-main, 1);
+                text-decoration: none;
+            }
+        }
+
+        .nav-logo {
+            @extend .nav-link;
+
+            a { text-decoration: none; }
+        }
+
+        .active {
+            a { text-decoration: overline; }
+        }
+    }
+
+    .wrapper {
+        @include flex(1);
+
+        @include display-flex-flow(column, nowrap);
+
+        width: calc(100% - 6px);
+
+        margin: 3px;
+
+        background-color: inherit;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+}

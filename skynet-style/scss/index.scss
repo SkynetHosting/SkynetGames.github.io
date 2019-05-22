@@ -1,0 +1,51 @@
+@import 'fonts';
+@import 'mixins';
+@import 'reset';
+@import 'material';
+@import 'colors';
+
+.container {
+    .wrapper {
+        .content {
+            @include flex(1);
+        }
+        .footer {
+
+            @include flex(0);
+
+            margin: 20px;
+            padding: 0;
+
+            text-decoration: none;
+
+            .bitcoin {
+                @include display-flex-flow(row, nowrap);
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
+
+                padding: 5px 10px;
+
+                @include material-background-color($color-main, 1);
+
+                border: solid 3px;
+                border-radius: 10px;
+                @include material-border-color($color-main, 4);
+
+                img {
+                    @include flex(0);
+                    width: 40px;
+                    height: 40px;
+                }
+
+                span {
+                    @include flex(1);
+                    font-size: 20px;
+                    @include material-color($color-main, 10);
+                    padding-left: 10px;
+                    font-family: $font-stack-title;
+                }
+            }
+        }
+    }
+}

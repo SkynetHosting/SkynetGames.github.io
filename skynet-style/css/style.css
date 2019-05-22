@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+  html .container, body .container {
+    width: 100%;
+    height: 100%; }
+
+/* MATERIAL DESIGN BLUE-GRAY*/
+/* MATERIAL DESIGN RED*/
+/* MATERIAL DESIGN LIME*/
+html {
+  background-color: #B0BEC5; }
+
+.container {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+  .container .wrapper-nav {
+    -webkit-flex: 0 0 auto;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #263238;
+    border-bottom: solid 3px;
+    border-color: #546E7A;
+    list-style: none; }
+    .container .wrapper-nav .nav-link, .container .wrapper-nav .nav-logo {
+      padding: 10px;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      text-decoration: none; }
+      .container .wrapper-nav .nav-link a, .container .wrapper-nav .nav-logo a {
+        color: #ECEFF1;
+        text-decoration: none; }
+    .container .wrapper-nav .nav-logo a {
+      text-decoration: none; }
+    .container .wrapper-nav .active a {
+      text-decoration: overline; }
+  .container .wrapper {
+    -webkit-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    width: calc(100% - 6px);
+    margin: 3px;
+    background-color: inherit;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center; }
